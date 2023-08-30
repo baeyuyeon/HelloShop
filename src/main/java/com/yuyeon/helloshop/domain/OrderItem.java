@@ -1,5 +1,6 @@
 package com.yuyeon.helloshop.domain;
 
+import com.yuyeon.helloshop.domain.item.Item;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -12,7 +13,7 @@ import lombok.Data;
 @Data
 @Entity
 @Table(name = "ORDER_ITEM")
-public class OrderItem {
+public class OrderItem extends BaseEntity {
 
     @Id
     @GeneratedValue

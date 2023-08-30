@@ -1,5 +1,6 @@
 package com.yuyeon.helloshop.domain;
 
+import com.yuyeon.helloshop.domain.item.Item;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -15,7 +16,7 @@ import lombok.Data;
 
 @Data
 @Entity
-public class Category {
+public class Category extends BaseEntity {
 
     @Id
     @GeneratedValue
