@@ -1,6 +1,7 @@
 package com.yuyeon.helloshop.domain;
 
 import jakarta.persistence.Column;
+import jakarta.persistence.Embedded;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
@@ -20,11 +21,14 @@ public class Member extends BaseEntity {
 
     private String name;
 
-    private String city;
+    /*private String city;
 
     private String street;
 
-    private String zipcode;
+    private String zipcode;*/
+
+    @Embedded
+    private Address address;
 
     @OneToMany(mappedBy = "member")
     private List<Order> orders = new ArrayList<>();

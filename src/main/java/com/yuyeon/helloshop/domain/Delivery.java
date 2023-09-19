@@ -1,6 +1,7 @@
 package com.yuyeon.helloshop.domain;
 
 import jakarta.persistence.Column;
+import jakarta.persistence.Embedded;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
@@ -21,9 +22,13 @@ public class Delivery extends BaseEntity {
     @OneToOne(mappedBy = "delivery")
     private Order order;
 
-    private String city;
+    /*private String city;
     private String street;
-    private String zipcode;
+    private String zipcode;*/
+
+    @Embedded
+    private Address address;
+
 
     @Enumerated(EnumType.STRING)
     private DeliveryStatus status;
