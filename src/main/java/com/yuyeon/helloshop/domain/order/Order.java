@@ -1,5 +1,8 @@
-package com.yuyeon.helloshop.domain;
+package com.yuyeon.helloshop.domain.order;
 
+import com.yuyeon.helloshop.domain.BaseEntity;
+import com.yuyeon.helloshop.domain.Delivery;
+import com.yuyeon.helloshop.domain.Member;
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

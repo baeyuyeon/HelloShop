@@ -1,5 +1,6 @@
 package com.yuyeon.helloshop.domain;
 
+import com.yuyeon.helloshop.domain.order.Order;
 import jakarta.persistence.Column;
 import jakarta.persistence.Embedded;
 import jakarta.persistence.Entity;
